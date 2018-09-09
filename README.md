@@ -13,13 +13,11 @@ The idea of the module came during investigating ways to develop React component
 * Have few dependencies on 3rd parties
 * Flexibity for the site builders
 
-### Demo
-
-> [Watch a demo](https://youtu.be/CY08LVXfk88) of the React Image Gallery module.
-
 ### Requirements
 
 Module depends on Media (core) and Paragraphs module.
+
+* TODO replace old Paragraphs solution with layout sections
 
 ### Installation
 
