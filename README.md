@@ -107,3 +107,5 @@ cors.config:
 ### Author/Maintainer
 
 * Paulo Gomes (pauloamgomes) - https://www.drupal.org/u/pauloamgomes
+
+* Fork author under(de)construction ChS - https://www.drupal.org/u/chs
