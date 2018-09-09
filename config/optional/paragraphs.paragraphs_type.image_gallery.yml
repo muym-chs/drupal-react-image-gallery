@@ -1,8 +1,9 @@
+uuid: cc91ed3c-ed7d-4037-9211-0fa897ac8776
 langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: bJ-qLaPzpaEOKFANX3NAPCHgKk80KrMN_wwY_p2fxu0
+  default_config_hash: zrArhWDxHrL63QUiPlkGojpXEXEy4f5wjB3TEYi2CYw
 id: image_gallery
 label: 'Image Gallery'
 icon_uuid: null

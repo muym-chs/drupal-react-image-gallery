@@ -1,3 +1,4 @@
+uuid: 970797d3-892e-4eb5-87ac-09fab865375a
 langcode: en
 status: true
 dependencies:
@@ -9,6 +10,8 @@ dependencies:
   module:
     - image
     - user
+_core:
+  default_config_hash: Zxw70oowxIdAoCRA7P6ks0cyNgb2YB8yHQfC-wUUGyY
 id: media.gallery_image.default
 targetEntityType: media
 bundle: gallery_image

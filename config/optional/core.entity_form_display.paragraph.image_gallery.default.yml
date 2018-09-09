@@ -1,24 +1,62 @@
+uuid: fcd7ea97-33a5-427b-8cd2-89b4c4591a2f
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.paragraph.image_gallery.field_gallery_images
     - paragraphs.paragraphs_type.image_gallery
+  module:
+    - content_moderation
+    - inline_entity_form
+_core:
+  default_config_hash: G8CQ1GGnDKTXaOzyxVj9BNG7_bI0Pg0VTMX0G1IJIKw
 id: paragraph.image_gallery.default
 targetEntityType: paragraph
 bundle: image_gallery
 mode: default
 content:
+  created:
+    type: datetime_timestamp
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_gallery_images:
-    type: entity_reference_autocomplete
+    type: inline_entity_form_complex
+    weight: 4
+    region: content
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      override_labels: false
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
+    third_party_settings: {  }
+  moderation_state:
+    type: moderation_state_default
     weight: 0
+    settings: {  }
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 2
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 1
     region: content
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
     third_party_settings: {  }
-hidden:
-  created: true
-  status: true
-  uid: true
+hidden: {  }

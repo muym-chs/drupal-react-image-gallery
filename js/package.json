@@ -5,25 +5,23 @@
   "dependencies": {
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
-    "react-image-gallery": "^0.8.7",
+    "react-image-gallery": "^0.8.11",
     "react-refetch": "^1.0.4"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build":
-      "sh -ac '. .env.production; react-app-rewired build' && yarn run build:dist",
-    "build:dist":
-      "cd build && cp static/js/*.js ../dist/gallery.js && cp static/css/*.css ../dist/gallery.css",
+    "build": "sh -ac '. .env.production; react-app-rewired build' && yarn run build:dist",
+    "build:dist": "cd build && cp static/js/*.js ../dist/gallery.js && cp static/css/*.css ../dist/gallery.css",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "precommit": "pretty-quick --staged"
   },
   "devDependencies": {
-    "react-scripts": "1.1.4",
     "eslint-plugin-prettier": "^2.6.0",
     "husky": "^0.14.3",
     "prettier": "1.12.1",
     "pretty-quick": "^1.4.1",
-    "react-app-rewired": "^1.5.2"
+    "react-app-rewired": "^1.6.2",
+    "react-scripts": "^1.1.4"
   }
 }

@@ -117,9 +117,12 @@ class GalleryFieldFormatter extends EntityReferenceFormatterBase {
    */
   public static function isApplicable(FieldDefinitionInterface $field_definition) {
     // Formatter is only available for fields from an image_gallery paragraph.
+    $bundle = $field_definition->getTargetBundle();
+    $target_entity_id = $field_definition->getTargetEntityTypeId();
+
     if (
       $field_definition->getTargetBundle() === 'image_gallery'
-      && $field_definition->getTargetEntityTypeId() === 'paragraph') {
+      && $field_definition->getTargetEntityTypeId() === 'block_content') {
       return TRUE;
     }
 

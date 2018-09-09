@@ -1,3 +1,4 @@
+uuid: f3bb1034-22f6-4768-a411-43fa64228232
 langcode: en
 status: true
 dependencies:
@@ -7,9 +8,10 @@ dependencies:
     - image.style.thumbnail
     - media.type.gallery_image
   module:
+    - content_moderation
     - image
 _core:
-  default_config_hash: sEcrPrCpLC_4RJ6NyBio7c2NjqPxU5HU8yT2uvu_Wyk
+  default_config_hash: TksFNclx-u7etyGZp07TspE9KiyNTc7Sq8gM4CJFOvA
 id: media.gallery_image.default
 targetEntityType: media
 bundle: gallery_image
@@ -30,6 +32,12 @@ content:
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
+    third_party_settings: {  }
+  moderation_state:
+    type: moderation_state_default
+    weight: 100
+    settings: {  }
+    region: content
     third_party_settings: {  }
   name:
     type: string_textfield

@@ -1,3 +1,4 @@
+uuid: eb620e60-129e-4d2a-a5e9-6ed5ec02a558
 langcode: en
 status: true
 dependencies:
@@ -14,7 +15,7 @@ dependencies:
     - rest
     - serialization
 _core:
-  default_config_hash: NN5_VPPQVpCadJMqzawm_nngmDMo7pjN1cCS_ZJNr_k
+  default_config_hash: tpiS3MpUV7yy6ECRw3r-Q9-lRmkpCMMs-mHNbioh9oQ
 id: image_gallery
 label: 'Image Gallery'
 module: views

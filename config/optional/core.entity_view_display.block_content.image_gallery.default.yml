@@ -1,23 +1,20 @@
-uuid: 0d0ee578-42d0-4abf-a31b-85d8f29ce259
+uuid: e9079b34-4845-4d31-a03b-77ddda1aad0f
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.image_gallery.field_gallery_images
-    - paragraphs.paragraphs_type.image_gallery
+    - block_content.type.image_gallery
+    - field.field.block_content.image_gallery.field_field_gallery_images
   module:
     - react_image_gallery
-_core:
-  default_config_hash: OJQaBVt9ApZywGtuWJDnj1nsMPpdIkSmVVA0OwMTMEk
-id: paragraph.image_gallery.default
-targetEntityType: paragraph
+id: block_content.image_gallery.default
+targetEntityType: block_content
 bundle: image_gallery
 mode: default
 content:
-  field_gallery_images:
+  field_field_gallery_images:
     type: gallery_field_formatter
     weight: 0
-    region: content
     label: above
     settings:
       infinite: true
@@ -30,4 +27,5 @@ content:
       showIndex: false
       autoPlay: false
     third_party_settings: {  }
+    region: content
 hidden: {  }

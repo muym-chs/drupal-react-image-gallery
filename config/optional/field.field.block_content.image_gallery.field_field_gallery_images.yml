@@ -1,0 +1,28 @@
+uuid: 3d743136-7e9d-4ed4-9126-caf0e69d5023
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.image_gallery
+    - field.storage.block_content.field_field_gallery_images
+    - media.type.gallery_image
+id: block_content.image_gallery.field_field_gallery_images
+field_name: field_field_gallery_images
+entity_type: block_content
+bundle: image_gallery
+label: gallery_images
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      gallery_image: gallery_image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
